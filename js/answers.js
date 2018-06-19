@@ -206,3 +206,14 @@ for (let i = 0; i < bondFilms.length; i++) {
 }
 
 console.log(bondTitles);
+
+
+const oddBonds = [];
+
+for (let i = 0; i < bondFilms.length; i++) {
+	if (bondFilms[i].year % 2 === 1) {
+		oddBonds.push(bondFilms[i].year);
+	}
+}
+
+console.log(oddBonds);
