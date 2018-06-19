@@ -129,3 +129,32 @@ console.log(crazyObject.larry.nicknames[1]);
 // 5. The object the contains the name funkhauser
 
 console.log(crazyObject.larry.characters[1]);
+
+
+
+
+
+// OBJECT-CEPTION
+
+const inception = {
+   reality: {
+       dreamLayer1: {
+           dreamLayer2: {
+               dreamLayer3: {
+                   dreamLayer4: {
+                       dreamLayer5: {
+                           dreamLayer6: {
+                               limbo: "Joseph Gordon Levitt"
+                          }
+                       }
+                   }
+               }
+           }
+       }
+   }
+}
+
+
+inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo = null;
+
+console.log(inception);
