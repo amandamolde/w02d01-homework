@@ -232,4 +232,54 @@ for (let i = 0; i < bondFilms.length; i++) {
 
 console.log(bondFilms);
 
-console.log(cumulativeGross);
+console.log(cumulativeGross); // --> 13821621224
+
+
+// OR
+
+// Ryan showed us the following approach on Wednesday morning.
+
+// let moneyList = [];
+
+// for (let i = 0; i < bondFilms.length; i++) {
+//   let gross = bondFilms[i].gross;
+//   console.log(bondFilms[i].gross);
+//   moneyList.push(gross);
+// }
+
+// const changeStringToNum = (numString) => {
+//   let result = '';
+//   for (let i = 0; i < numString.length; i++) {
+//     if (!isNaN(numString[i])) {
+//       result += numString[i];
+//     }
+//   }
+//   result = parseInt(result);
+//   return result;  
+// }
+
+// let goodMoneyList = [];
+
+// for (let i = 0; i < moneyList.length; i++) {
+//   let goodMoney = changeStringToNum(moneyList[i]);
+//   goodMoneyList.push(goodMoney);
+// }
+
+// console.log(goodMoneyList);
+// let sum = 0;
+
+// for (let i = 0; i < goodMoneyList.length; i++) {
+//   sum += goodMoneyList[i];
+// }
+
+// console.log(sum); // --> 13821621224
+
+
+
+
+// HUNGRY FOR MORE?
+
+// bondFilms again!
+
+// Console log the single movie object that contains the actor who starred in the least number of films
+
